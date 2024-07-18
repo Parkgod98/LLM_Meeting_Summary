@@ -20,7 +20,7 @@ h1, p, input {
 .e601_9 { 
 	background-color:rgba(255, 255, 255, 1);
 	width:1440px;
-	height:1880px;
+	height:2880px;
 	position:absolute;
 }
 .e601_12 { 
@@ -160,7 +160,7 @@ h1, p, input {
 	top:36px;
 	font-family:Roboto;
 	text-align:left;
-	font-size:16px;
+	font-size:22px;
 	letter-spacing:0;
 	line-height:px;
 }
@@ -171,7 +171,7 @@ h1, p, input {
 	height:464px;
 	position:absolute;
 	left:0px;
-	top:876px;
+	top:1076px;
 }
 .e601_261 { 
 	width:520px;
