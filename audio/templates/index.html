@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Recognition in Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+</head>
+<body>
+    <div class=e601_9>
+        <div class=e601_12>
+            <div class=e601_13><span  class="e601_14">회의록 작성 서비스</span>
+                <div class=e601_19>
+                    <div class=e601_20><span  class="e601_21">녹음 파일 업로드</span></div>
+                    
+                </div>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <input type="submit" value="Upload">
+                </form>
+                <!-- <form><input type="file"/></form> -->
+            </div>
+            <div class="e601_24"></div>
+            {% if total_script != "" %}
+            <div class=e601_25>
+                <div class=e601_26>
+                    <span  class="e601_27">회의록 전문</span>
+                    
+                    <div class=e601_32>
+                                <div class=e601_37>
+                                    <span class="e601_39">{{ total_script | safe }}</span>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            {% endif %}
+            {% if transcript != "" %}
+            <div class=e601_251>
+                <div class=e601_261>
+                    <span  class="e601_271">회의록 요약</span>
+                    
+                    <div class=e601_321>
+                                <div class=e601_371>
+                                    <span class="e601_391">{{ transcript | safe }}</span>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            {% endif %}
+        </div>
+
+        
+
+        
+
+    </div>
+
+
+</body>
+</html>
