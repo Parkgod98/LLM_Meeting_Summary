@@ -1,4 +1,2 @@
 openai
-os
-re
 python-dotenv
