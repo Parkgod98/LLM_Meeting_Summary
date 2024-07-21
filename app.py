@@ -23,7 +23,7 @@ def GetWhisperText(audio_test_file) : # 문자열 형태의 음성파일 경로 
     deployment_id = 'whisper' #whisper
     # audio_test_file = path # 음성 파일의 경로.
     result = client.audio.transcriptions.create( # 음성 
-        file=open(audio_test_file, "rb"),           
+        file=audio_test_file,           
         model=deployment_id
     )
     
